@@ -1,0 +1,11 @@
+A2: A2.o list.o
+	gcc A2.o list.o -o A2
+
+A2.o: A2.c
+	gcc -c A2.c -o A2.o
+
+list.o: list.c
+	gcc -c list.c -o list.o
+    
+clean:
+	rm *.o A2
